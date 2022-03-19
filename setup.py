@@ -10,7 +10,7 @@ setuptools.setup(
     description="An api for generating disposable mails.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sunilswain/malixMail",
+    url="https://github.com/sunilswain/malix",
     project_urls={
     },
     classifiers=[
