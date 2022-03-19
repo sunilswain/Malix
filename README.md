@@ -8,7 +8,7 @@ You can find the documentation of this project - [here.](https://malix.readthedo
 
 This library is available in PyPI, and you can get it by pip using the following command
 
-    py -m pip install -U malix-swin
+    py -m pip install -U malix-swain
 
 Or you can clone the source code by git using the following commnad
 
