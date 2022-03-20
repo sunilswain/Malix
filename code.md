@@ -1,4 +1,4 @@
-Download message(Windows only)
+Download message
     
     client.download_message(Id='MessageId')
   
