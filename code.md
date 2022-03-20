@@ -3,7 +3,7 @@ get json response
     from malix import get_domain_collection
     response = get_domain_collection()
   
-this would choose the ther first from the available domain
+choosing domain(0 represents the frist domain)
 
     domain = response["hydra:member"][0]["domain"]
 
