@@ -1,9 +1,6 @@
-Create an account(returns an account object if successful) 
+Client setup
 
-    from malix import make_account
-    mail = make_account(address='example@'+domain, password='y0urp4ss0wrd')
- 
-Prints emailId
-    
-    print(mail.id)
+    from malix import Client
+    client = malix.Client(address='example@domain.com', password='passowrd')
+  
 
