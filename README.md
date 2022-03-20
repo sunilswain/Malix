@@ -1,5 +1,5 @@
 # Malix
-API for generating disposable emails(technically it's an API wrapper for api.mail.tm)
+API for generating disposable emails.
 
 You can find the documentation of this project - [here.](https://malix.readthedocs.io/en/latest/)
 
