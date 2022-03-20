@@ -1,9 +1,9 @@
-Get json response
+Create an account(returns an account object if successful) 
 
-    from malix import get_domain_collection
-    response = get_domain_collection()
-  
-Choosing domain(0 represents the frist domain)
-
-    domain = response["hydra:member"][0]["domain"]
+    from malix import make_account
+    mail = make_account(address='example@'+domain, password='y0urp4ss0wrd')
+ 
+Prints emailId
+    
+    print(mail.id)
 
