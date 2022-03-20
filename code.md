@@ -1,11 +1,5 @@
-Getting messages 
-
-    messages = client.get_message_collection()
+Download message(Windows only)
     
-Get information for a specific message
-
-    info = client.get_message(Id='MessageId')
-
-    print(info.json)
+    client.download_message(Id='MessageId')
   
 
