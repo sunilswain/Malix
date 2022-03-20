@@ -14,7 +14,7 @@ Or you can clone the source code by git using the following commnad
 
     git clone https://github.com/sunilswain/Malix
 
-then go to same directory as MalixMail and run setup.py using this command
+then go to same directory as Malix and run setup.py using this command
 
     py setup.py install
 
