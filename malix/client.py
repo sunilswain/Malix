@@ -123,7 +123,7 @@ class Client:
         return Methods.delete_message(Id, self.token)
 
 
-    def download_message(self, Id: str):
+    def download_message(self, Id: str, Path: str = None):
         """Downloads the message.
 
         :param Id: Id of the message.
@@ -138,7 +138,10 @@ class Client:
         :type ResourceNotFound: :class:`ResourceNotFound <malix.utils.exceptions.ResourceNotFound>`
 
         """
-        return Methods.download_message(Id, self.token)
+        if Path:
+            return Methods.download_message(Id, self.token, Path)
+        else:
+            return Methods.download_message(Id, self.token)
 
     def update_message(self, Id: str):
         """Updates seen status of the given message id.
