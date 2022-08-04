@@ -1,6 +1,6 @@
 import requests
 import json
-import os
+import os, platform
 from .headers import Header
 from .attributes import *
 from .exceptions import *
@@ -65,7 +65,15 @@ def update_message(Id: str, token: str):
 def download_message(Id: str, token: str, path: str = None):
     """Downloads the message."""
     html = get_message(Id, token).html[0]
-    path = "C:/Users/"+os.getlogin()+"/Downloads/"
+    if path:
+        pass
+    elif platform.system() == "Windows":
+        path = "C:/Users/"+os.getlogin()+"/Downloads/"
+    elif platform.system() == "Linux":
+        path = "/home/"+os.getlogin()+"/Downloads/"
+    elif platform.system() == "Darwin":
+        path = "/Users/"+os.getlogin()+"/Downloads/"
+    
     with open(path+Id+".html", "w") as f:
         f.write(html)
     return 200
